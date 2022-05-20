@@ -1,0 +1,54 @@
+div {
+	padding: 10px 20px;
+	background-color: gray;
+	margin: 20px 0;
+	width: 350px;
+	transform: skew(-20deg);
+}
+span, ul, li {
+	display: inline-block;
+}
+span {
+	color: white;
+	transform: skew(20deg);
+	line-height: 20px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+}
+li {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	background-color: green;
+	transform: skew(-20deg);
+}
+div::after, div::before {
+	content: '';
+	width: 5px;
+	height: 15px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: -3px;
+	transform: skew(20deg);
+}
+div::before {
+	top: 0;
+	left: 387px;
+	width: 7px;
+	height: 16px;
+}
+
+.yellow {
+	background-color: yellow;
+}
+.red {
+	background-color: red;
+}
+.none {
+	background-color: lightgray;
+}
